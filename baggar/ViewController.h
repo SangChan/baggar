@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <iAd/iAd.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<ADBannerViewDelegate> {
+    ADBannerView* adBanner; // iAD
+}
 
 @end
